@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "./gradlew clean build",
             "windows": {
-                "command": "gradlew.bat clean build"
+                "command": ".\\gradlew.bat clean build"
             }
         },
         {
@@ -14,7 +14,7 @@
             "type": "shell",
             "command": "(sleep 3 && open http://localhost:8080/) & ./gradlew appRun",
             "windows": {
-                "command": "timeout 3 & start http://localhost:8080/ & gradlew.bat appRun"
+                "command": ".\\gradlew.bat appRun"
             },
             "group": {
                 "kind": "test",
