@@ -39,7 +39,6 @@ gradlew.bat appRun
 3. ブラウザで以下のURLにアクセスします：
 
 - トップページ: [http://localhost:8080/](http://localhost:8080/)
-- Hello World ページ: [http://localhost:8080/hello](http://localhost:8080/hello)
 
 ## プロジェクト構造
 

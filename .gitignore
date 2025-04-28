@@ -19,7 +19,7 @@ bin/
 out/
 
 # VS Code関連
-.vscode/
+# .vscode/
 
 # Mac関連
 .DS_Store
