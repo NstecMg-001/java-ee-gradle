@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'org.gretty' version '4.1.1'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Jakarta EE 9 APIs
+    providedCompile 'jakarta.servlet:jakarta.servlet-api:5.0.0'
+    providedCompile 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.0.0'
+}
+
+gretty {
+    httpPort = 8080
+    contextPath = '/'
+    servletContainer = 'tomcat10'
+}
+
+war {
+    archiveBaseName = 'java-ee-sample'
+}
+
+wrapper {
+    gradleVersion = '8.6'
+}
